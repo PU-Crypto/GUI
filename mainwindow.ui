@@ -1,24 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>mainWindow</class>
- <widget class="QMainWindow" name="mainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1024</width>
+    <height>768</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>mainWindow</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1001</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="home">
+     <attribute name="title">
+      <string>Home</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="aes">
+     <attribute name="title">
+      <string>AES</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="rsa">
+     <attribute name="title">
+      <string>RSA</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="datei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="testEntry"/>
+   </widget>
+   <widget class="QMenu" name="menuExtras">
+    <property name="title">
+     <string>Extras</string>
+    </property>
+    <addaction name="testEntry_2"/>
+   </widget>
+   <addaction name="datei"/>
+   <addaction name="menuExtras"/>
+  </widget>
+  <action name="testEntry">
+   <property name="text">
+    <string>Punkte folgen ggf</string>
+   </property>
+  </action>
+  <action name="testEntry_2">
+   <property name="text">
+    <string>Punkte folgen auch hier ggf</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
