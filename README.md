@@ -5,3 +5,5 @@ die Python-Scripte im Backend triggern. Einer der Schwerpunkte ist eine hohe Ben
 sowie ein angenehmes Design, definiert in CSS.
 
 Mitarbeiter: Jan, Mirko
+
+Edit: Ich habe nun ein erstes kleines Grundgerüst für das GUI gepusht, viel Spaß, Mirko :p
