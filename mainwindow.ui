@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>0</y>
       <width>1001</width>
-      <height>721</height>
+      <height>761</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="home">
      <attribute name="title">
@@ -35,6 +35,19 @@
      <attribute name="title">
       <string>AES</string>
      </attribute>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>501</x>
+        <y>-10</y>
+        <width>20</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="rsa">
      <attribute name="title">
@@ -42,30 +55,6 @@
      </attribute>
     </widget>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1024</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="datei">
-    <property name="title">
-     <string>Datei</string>
-    </property>
-    <addaction name="testEntry"/>
-   </widget>
-   <widget class="QMenu" name="menuExtras">
-    <property name="title">
-     <string>Extras</string>
-    </property>
-    <addaction name="testEntry_2"/>
-   </widget>
-   <addaction name="datei"/>
-   <addaction name="menuExtras"/>
   </widget>
   <action name="testEntry">
    <property name="text">
