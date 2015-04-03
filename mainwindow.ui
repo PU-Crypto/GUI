@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>10</y>
       <width>1021</width>
       <height>761</height>
      </rect>
@@ -33,6 +33,35 @@
      <attribute name="title">
       <string>Home</string>
      </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>160</y>
+        <width>531</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;&lt;p&gt;Proin aliquam turpis lorem. &lt;/p&gt;&lt;p&gt;Ut euismod tincidunt orci, vel tempus ante vulputate a. &lt;/p&gt;&lt;p&gt;Mauris tristique lacinia rutrum. &lt;/p&gt;&lt;p&gt;Curabitur ornare vitae lacus rutrum venenatis. &lt;/p&gt;&lt;p&gt;Praesent vel elit eros. &lt;/p&gt;&lt;p&gt;Vestibulum euismod fringilla dolor, vitae ullamcorper magna fermentum eget. &lt;/p&gt;&lt;p&gt;Cras mattis quis magna quis tincidunt. &lt;/p&gt;&lt;p&gt;In tempus feugiat nunc vel porttitor. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>851</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="aes">
      <attribute name="title">
@@ -60,6 +89,9 @@
         <height>271</height>
        </rect>
       </property>
+      <property name="plainText">
+       <string>Paste your unencrypted text here..</string>
+      </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
@@ -69,6 +101,9 @@
         <width>491</width>
         <height>21</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>Enter your passphrase here..</string>
       </property>
      </widget>
      <widget class="QPlainTextEdit" name="plainTextEdit_2">
@@ -80,6 +115,12 @@
         <height>271</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="plainText">
+       <string>Paste your encrypted text here..</string>
+      </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_2">
       <property name="geometry">
@@ -89,6 +130,67 @@
         <width>491</width>
         <height>21</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>Enter your passphrase here..</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>350</y>
+        <width>99</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Crypt!</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>350</y>
+        <width>99</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>350</y>
+        <width>99</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Decrypt!</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>350</y>
+        <width>99</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
       </property>
      </widget>
     </widget>
