@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>10</y>
       <width>1001</width>
-      <height>761</height>
+      <height>721</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="home">
      <attribute name="title">
@@ -35,26 +35,191 @@
      <attribute name="title">
       <string>AES</string>
      </attribute>
-     <widget class="Line" name="line">
-      <property name="geometry">
-       <rect>
-        <x>501</x>
-        <y>-10</y>
-        <width>20</width>
-        <height>751</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="rsa">
      <attribute name="title">
       <string>RSA</string>
      </attribute>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>370</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Los!</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>370</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Los!</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>271</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>Text hier einfügen</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>330</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>Passwort hier eingeben</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>100</y>
+        <width>311</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>Text hier einfügen</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>330</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>Passwort hier eingeben</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Verschlüsseln</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>80</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Entschlüsseln</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>100</y>
+        <width>21</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_2">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>100</y>
+        <width>21</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>true</bool>
+      </property>
+     </widget>
     </widget>
    </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="datei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="testEntry"/>
+   </widget>
+   <widget class="QMenu" name="menuExtras">
+    <property name="title">
+     <string>Extras</string>
+    </property>
+    <addaction name="testEntry_2"/>
+   </widget>
+   <addaction name="datei"/>
+   <addaction name="menuExtras"/>
   </widget>
   <action name="testEntry">
    <property name="text">
