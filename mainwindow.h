@@ -15,6 +15,12 @@ public:
     explicit mainWindow(QWidget *parent = 0);
     ~mainWindow();
 
+private slots:
+
+    void on_aes_btn_crypt_clicked();
+
+    void on_aes_btn_decrypt_clicked();
+
 private:
     Ui::mainWindow *ui;
 };
